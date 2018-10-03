@@ -1,0 +1,76 @@
+ScreenManagement:
+    id: screen_management
+    ScreenOne:
+    ScreenTwo:
+    ScreenThree:
+
+
+
+<ScreenOne>:
+    name: "screen1"
+    id: screen_one
+
+    FloatLayout:
+        canvas.before:
+            Rectangle:
+                source: "image1.jpg"
+                pos:self.pos
+                size:self.size
+
+        Label:
+            text:"Hello\n Welcome to my App\n"
+            font_size:40 
+            color: 0,0,0,1
+        Button:
+            text: 'Next'
+            font_size: 32 # font size
+            size_hint: .2,.1
+            pos_hint:{'right':1, 'y':0}
+            on_release: app.root.current="screen2"
+
+<ScreenTwo>:
+    name: "screen2"
+    id: screen_two
+
+    FloatLayout:
+        canvas:
+
+            Rectangle:
+                source: "image1.jpg"
+                pos:self.pos
+                size:self.size
+
+        Label:
+            text:"Please insert your Name\n Please insert your Password\n"
+            font_size:40 
+            color: 0,0,0,1
+        Button:
+            text: 'Next'
+            font_size: 32 # font size
+            size_hint: .2,.1
+            pos_hint:{'right':1, 'y':0}
+            on_release: app.root.current="screen3"
+
+<ScreenThree>:
+    name: "screen3"
+    id: screen_three
+
+
+    FloatLayout:
+        canvas:
+
+            Rectangle:
+                source: "image1.jpg"
+                pos:self.pos
+                size:self.size
+
+
+        Button:
+            text: 'Next'
+            font_size: 32 # font size
+            size_hint: .2,.1
+            pos_hint:{'right':1, 'y':0}
+            on_release: app.root.current="screen1"
+
+        BoxLayout:
+            orientation: 'horizontal'
