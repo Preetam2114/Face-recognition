@@ -23,3 +23,9 @@ python -m pip install opencv-python(for Mac)
 ## Downloading Haarcascade classifiers :
 For projects involving face and eye detection we need the .XML files which are already provided in this repsitory to stay updated fork the opencv github repository 
 [click here](https://github.com/Preetam2114/opencv/tree/master/data/haarcascades) for the link 
+
+## Other requirements
+We do require libraries like imutils run the following command 
+```
+pip install imutils
+```
