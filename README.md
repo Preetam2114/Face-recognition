@@ -25,7 +25,11 @@ For projects involving face and eye detection we need the .XML files which are a
 [click here](https://github.com/Preetam2114/opencv/tree/master/data/haarcascades) for the link 
 
 ## Other requirements
-We do require libraries like imutils run the following command 
+We do require libraries like imutils,mahotas,scikit run the following commands 
 ```
 pip install imutils
+pip install mahotas
+pip install -U scikit-learn
 ```
+
+
